@@ -1,0 +1,124 @@
+/* Allgemeine Reset- und Boxmodel-Regeln */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Grundlegende Formatierung des Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Hauptinhalt */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Übungsabschnitte */
+.exercise-section {
+  display: none;
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-section.active {
+  display: block;
+}
+
+/* Timer-Bereich */
+.timer {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.timer span {
+  font-size: 2rem;
+  margin-right: 1rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.timer button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.timer button:hover:not(:disabled) {
+  background-color: #357ab7;
+}
+
+/* Textarea für Notizen */
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f6f8;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
