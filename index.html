@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metakognitive Therapie App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Metakognitive Therapie App</h1>
+    <nav>
+      <ul>
+        <li><a href="#" data-section="morning" class="active">Morgen</a></li>
+        <li><a href="#" data-section="afternoon">Zwischen</a></li>
+        <li><a href="#" data-section="evening">Abend</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Morgen: Detached Mindfulness -->
+    <section id="morning" class="exercise-section active">
+      <h2>Morgen: Detached Mindfulness</h2>
+      <p>
+        Setzen Sie sich für 10–15 Minuten in Ruhe und beobachten Sie Ihre Gedanken,
+        ohne sich in sie zu verfangen.
+      </p>
+      <div class="timer">
+        <span id="morning-timer-display">15:00</span>
+        <button id="morning-start-btn">Start</button>
+        <button id="morning-stop-btn" disabled>Stop</button>
+      </div>
+      <textarea id="morning-notes" placeholder="Notizen eintragen..."></textarea>
+    </section>
+
+    <!-- Zwischen/Vormittag: Worry Postponement -->
+    <section id="afternoon" class="exercise-section">
+      <h2>Zwischen: Worry Postponement</h2>
+      <p>
+        Wenn Sie in Grübeleien verfallen, notieren Sie diese Gedanken kurz oder
+        verschieben Sie sie auf eine festgelegte Sorgen-Zeit (5–10 Minuten).
+      </p>
+      <div class="timer">
+        <span id="afternoon-timer-display">10:00</span>
+        <button id="afternoon-start-btn">Start</button>
+        <button id="afternoon-stop-btn" disabled>Stop</button>
+      </div>
+      <textarea id="afternoon-notes" placeholder="Notizen eintragen..."></textarea>
+    </section>
+
+    <!-- Abend: Reflexion und Metakognitive Übung -->
+    <section id="evening" class="exercise-section">
+      <h2>Abend: Reflexion und Metakognitive Übung</h2>
+      <p>
+        Reflektieren Sie den Tag für 10–15 Minuten. Notieren Sie, wann und wie Ihre
+        Gedankenmuster aktiv wurden und welche Strategien Ihnen geholfen haben.
+      </p>
+      <div class="timer">
+        <span id="evening-timer-display">15:00</span>
+        <button id="evening-start-btn">Start</button>
+        <button id="evening-stop-btn" disabled>Stop</button>
+      </div>
+      <textarea id="evening-notes" placeholder="Notizen eintragen..."></textarea>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Metakognitive Therapie App</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
